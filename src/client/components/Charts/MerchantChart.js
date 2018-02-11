@@ -21,11 +21,11 @@ const MerchantChart = props => {
 
     return <ResponsiveContainer width="95%" height="50%">
         <BarChart data={merchantData} margin={{
-                top: 5,
-                right: 5,
-                left: 5,
-                bottom: 5
-            }}>
+            top: 5,
+            right: 5,
+            left: 5,
+            bottom: 5
+        }}>
             <XAxis dataKey="merchant"/>
             <YAxis/>
             <CartesianGrid strokeDasharray="3 3"/>
