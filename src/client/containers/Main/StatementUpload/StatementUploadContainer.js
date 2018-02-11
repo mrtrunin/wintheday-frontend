@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import StatementUploadForm from './StatementUploadForm';
-import uploadStatement from 'api/uploadStatement';
+import UploadStatement from 'api/UploadStatement';
 import { connect } from 'react-redux';
 import store from 'store';
 import Message from 'actions/Message';
@@ -26,7 +26,7 @@ class StatementUploadContainer extends Component {
         await store.dispatch({
             type: 'UPLOAD_STATEMENT'
         })
-        await uploadStatement(file, bank)
+        await UploadStatement(file, bank)
         await Message(this.props.message)
     }
 
