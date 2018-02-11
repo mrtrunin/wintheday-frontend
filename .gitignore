@@ -22,4 +22,4 @@ chrome-user-data
 *.swo
 *.env
 .env
-build/
+public/build/
