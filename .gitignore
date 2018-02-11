@@ -23,4 +23,3 @@ chrome-user-data
 *.swo
 *.env
 .env
-static/

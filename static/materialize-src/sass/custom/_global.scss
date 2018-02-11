@@ -1,0 +1,49 @@
+/////////////////////////////
+// General paddings and sizes
+/////////////////////////////
+
+header, main, footer {
+    padding-left: 300px;
+}
+
+.header {
+    color: #ee6e73;
+    font-weight: 300;
+}
+
+.page-title {
+    font-size: 45px;
+    line-height: 130px;
+}
+
+.top-nav {
+    height: 130px;
+}
+
+@media only screen and (max-width: 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+
+    .top-nav {
+        height: 100px
+    }
+
+    .page-title {
+        font-size: 30px;
+        line-height: 100px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
+/////////////////////////////
+// Individual elements
+/////////////////////////////
+
+.autocomplete-content {
+    position: absolute;
+}
+

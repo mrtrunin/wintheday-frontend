@@ -1,0 +1,81 @@
+header, main, footer {
+    padding-left: 300px;
+}
+
+input[type~=text] {
+    margin: 0 0 0 0;
+}
+
+.header {
+    color: #ee6e73;
+    font-weight: 300;
+}
+
+.container {
+    width: 85%;
+}
+
+.page-title {
+    font-size: 45px;
+    line-height: 130px;
+}
+
+.top-nav {
+    height: 130px;
+}
+
+#toast-container {
+    top: auto !important;
+    right: auto !important;
+    bottom: 10%;
+    left: 50%;
+}
+
+/* label focus color */
+
+.input-field input[type~=text]:focus+label, .input-field input[type~=password]:focus+label {
+    color: #f06292;
+}
+
+/* label underline focus color */
+
+.input-field input[type~=text]:focus, .input-field input[type~=password]:focus {
+    border-bottom: 1px solid #f06292;
+    box-shadow: 0 1px 0 0 #f06292;
+}
+
+.material-icons.prefix.active {
+    color: #f06292;
+}
+
+.checkbox-pink-lighten-2[type="checkbox"].filled-in:checked+label:after {
+    border: 2px solid #f06292;
+    background-color: #f06292;
+}
+
+.full-height {
+    top: 50%;
+}
+
+.autocomplete-content {
+    position: absolute;
+} 
+
+@media only screen and (max-width: 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+
+    .top-nav {
+        height: 100px
+    }
+
+    .page-title {
+        font-size: 30px;
+        line-height: 100px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
