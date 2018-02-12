@@ -3,6 +3,10 @@ import axios from 'axios';
 
 
 async function LoadTransaction(transactionId) {
+    console.log('====================================');
+    console.log(localStorage.jwtToken)
+    console.log('====================================');
+
     await axios.get(process.env.SERVER_URL + '/transactions/' + transactionId, {
         headers: {
             Authorization: 'Bearer ' + localStorage.jwtToken

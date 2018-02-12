@@ -8,7 +8,7 @@ async function LoadTransactionList(uncategorised, from_date, to_date) {
     let param_from_date = from_date ? '&from_date=' + from_date : ''
     let param_to_date = to_date ? '&to_date=' + to_date : ''
 
-    let get_params = (param_uncategorised || param_from_date || param_to_date) ? '?' : ''
+    let get_params = (param_uncategorised || param_from_date || param_to_date) ? '?' : ''
 
     await axios.get(process.env.SERVER_URL+ '/transactions/'
     + get_params + param_uncategorised + param_from_date + param_to_date,
